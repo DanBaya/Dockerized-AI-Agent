@@ -70,6 +70,7 @@ Navigate to the Flask UI in your browser and start asking questions about the re
 The assistant retrieves the most relevant reviews from ChromaDB, passes them as context to Llama 3.1, and returns a grounded answer — with the full conversation saved to PostgreSQL.
 
 ---
+<img width="1972" height="1300" alt="Screenshot 2026-03-13 at 21-47-09 Quiz Module 08 - Lab 2 - Biostratigraphy" src="https://github.com/user-attachments/assets/202f5d03-367f-484a-a0ca-200e648b6645" />
 
 ## Tech Stack
 
