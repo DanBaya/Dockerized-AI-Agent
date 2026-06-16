@@ -60,41 +60,6 @@ Flask (app.py)
 └── .dockerignore
 ```
 
----
-
-## Getting Started
-
-### Prerequisites
-
-- Docker & Docker Compose
-- (For cloud deployment) AWS EC2 instance — t3.xlarge or larger recommended
-
-### Run locally
-
-```bash
-git clone https://github.com/DanBaya/Dockerized-AI-Agent
-cd Dockerized-AI-Agent
-bash start.sh
-```
-
-The chat UI will be available at `http://localhost:5000`.
-
-### Deploy to EC2
-
-```bash
-# Copy project to your instance
-scp -r . ec2-user@<your-ec2-ip>:~/ai-agent
-
-# SSH in and start the stack
-ssh ec2-user@<your-ec2-ip>
-cd ~/ai-agent
-bash start.sh
-```
-
-Open port 5000 in your EC2 security group to enable public access.
-
----
-
 ## Usage
 
 Navigate to the Flask UI in your browser and start asking questions about the restaurant review dataset:
