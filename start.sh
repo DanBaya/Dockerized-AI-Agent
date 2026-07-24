@@ -10,5 +10,5 @@ until curl -s http://localhost:11434 > /dev/null; do
 done
 echo "Ollama is ready."
 
-echo "Starting Flask..."
-python app.py
+echo "Starting Flask via Gunicorn..."
+exec gunicorn -w 2 -b 0.0.0.0:5000 --timeout 120 --access-logfile - app:app
